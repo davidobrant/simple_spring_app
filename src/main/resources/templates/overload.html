@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{./styles.css}" />
+    <title>Overload</title>
+
+</head>
+<body>
+<div class="page-container flex-col overload">
+  <a href="/" class="back-icon"><</a>
+  <h2>Overload</h2>
+  <div style="relative">
+    <div class="spinner"></div>
+  </div>
+
+</div>
+
+<script>
+  window.onload = () => {
+    setTimeout(() => {
+        window.location.reload();
+    }, 3000)
+  }
+</script>
+</body>
+</html>

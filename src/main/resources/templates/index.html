@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startsida</title>
+    <link rel="stylesheet" th:href="@{./styles.css}" />
+</head>
+<body>
+<div class="page-container flex-col welcome">
+    <h1>Välkommen till vår Todo-lista!</h1>
+    <div class="links">
+        <a id="tasks-link" href="/tasks">Se Todo-listan</a>
+        <a id="overload-link" href="/overload">Overload</a>
+    </div>
+</div>
+</body>
+</html>
