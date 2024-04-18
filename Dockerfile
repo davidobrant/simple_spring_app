@@ -6,6 +6,7 @@ WORKDIR /app
 
 # Kopiera maven-executable till containern
 COPY mvnw .
+RUN chmod +x mvnw
 COPY .mvn .mvn
 
 # Kopiera pom.xml och källkoden
