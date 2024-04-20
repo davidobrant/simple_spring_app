@@ -72,10 +72,6 @@ public class TaskController {
     @GetMapping("/overload")
     public String overloadFull() {
 
-        if (taskRepository.count() > 20000) {
-            taskRepository.deleteAll();
-        }
-
         for (int i = 0; i < 1000; i++) {
             var task = new Task();
             task.setDone(false);
